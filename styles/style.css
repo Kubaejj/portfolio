@@ -296,7 +296,7 @@ html {
     .portfolio__container--web {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
-
+/*
     .portfolio__item:nth-of-type(1) {
         grid-column: span 2;
         grid-row: span 2;
@@ -308,7 +308,7 @@ html {
 
     .portfolio__item:nth-of-type(6) {
         grid-column: span 2;
-    }
+    }*/
 }
 
 @media screen and (min-width: 1000px) {

@@ -319,6 +319,11 @@ html {
         gap: .5rem;
 
     }
+    .portfolio__container--web {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
+    gap: 4rem;
+
+}
 }
 
 
@@ -452,6 +457,9 @@ html {
 @media screen and (max-width: 700px) {
  .aboutme__text{
     order: -1;
+ }
+ .info{
+    border: none;
  }
     
 }

@@ -35,6 +35,7 @@
 .nav__li {
     list-style: none;
     position: relative;
+    font-weight: 800;
 }
 
 .nav__item {
@@ -44,38 +45,7 @@
     display: block;
 }
 
-.dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: var(--gray, #3A3F45);
-    padding: 0.5em 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    min-width: 200px;
-}
-
-.dropdown__item {
-    text-decoration: none;
-    color: var(--white, #F0F0F0);
-    padding: 0.5em 1.25em;
-    display: block;
-
-}
-
-.dropdown__item:hover {
-    background-color: var(--white, #F0F0F0);
-    color: var(--gray, #3A3F45);
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.nav__li:hover .dropdown {
-    display: block;
-}
-
-
 .header {
-    position: fixed;
     left: 0;
     right: 0;
     top: 0;
@@ -101,8 +71,9 @@
         right: 0;
         width: 100%;
         overflow-y: auto;
-    }
+        background-image: url('../img/header-bg.jpg');
 
+    }
 
 
     .body {
@@ -110,7 +81,6 @@
     }
 
     .header__nav {
-        background-color: var(--gray, #3A3F45);
         color: var(--white, #F0F0F0);
         position: fixed;
         width: 100%;
@@ -123,41 +93,25 @@
         opacity: 1;
     }
 
-    .dropdown {
-        display: block;
-        position: static;
-        box-shadow: none;
-    }
-
-    .dropdown__item {
-        padding: 1em 1.25em;
-    }
-
-    .nav__item--best::after {
-        display: none;
-    }
 }
- .nav__li a:hover{
-        background-color: white;
-        color: var(--gray, #3A3F45);
-        border-radius: .5rem;
-    }
+
+.nav__li a:hover {
+    background-color: white;
+    color: #000;
+
+    border-radius: .5rem;
+}
+
 @media screen and (min-width: 808px) {
     .header__hamburger {
         display: none;
     }
 
-    .main {
-        margin-top: 76px;
-    }
-
-
- 
+   
 
     .header {
         display: flex;
         justify-content: space-between;
-        background-color: var(--gray, #3A3F45);
     }
 
     .header__nav {
@@ -171,11 +125,5 @@
         gap: 1.5rem;
         align-items: center;
     }
-   
 
-  
-
-   
-
-   
 }

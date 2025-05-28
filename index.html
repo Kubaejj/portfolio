@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jakub Jezbera</title>
+    <link rel="icon" href="./img/logo.svg" type="image/x-icon">
+    <meta name="description"
+        content="Jsem fotograf a tvořím weby na zakázku. Rád zachycuju lidi, jejich emoce a příběhy – stylově, s citem a krásou. Ať už jde o fotky nebo web, vždycky se snažím, aby z toho byl zážitek.">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/hamburger.css">
+    <link rel="stylesheet" href="./styles/icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -15,59 +19,176 @@
         rel="stylesheet">
 </head>
 
+
+
 <body>
-    <header class="header">
-        <div class="header__row">
-            <div class="header__logo-container">
-                <a href="#">
-                    <img src="./img/logo.svg" alt="Logo" class="header__logo">
+    <div class="overlay">
+        <header class="header">
+            <div class="header__row">
+                <div class="header__logo-container">
+                    <a href="#">
+                        <img src="./img/logo.svg" alt="Logo" class="header__logo">
+                    </a>
+                    <h1 class="header__title text--h1 text--bold">Jakub Jezbera</h1>
+                </div>
+                <a href="javascript:void(0)" class="header__hamburger hamburger" aria-label="Otevřít navigaci">
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
+                    <span class="hamburger__line"></span>
                 </a>
-                <h1 class="header__title text--h1 text--bold">Jakub Jezbera</h1>
             </div>
-            <a href="javascript:void(0)" class="header__hamburger hamburger" aria-label="Otevřít navigaci">
-                <span class="hamburger__line"></span>
-                <span class="hamburger__line"></span>
-                <span class="hamburger__line"></span>
-            </a>
-        </div>
-        <nav class="header__nav nav">
-            <ul class="nav__list">
-                <li class="nav__li">
-                    <a class="nav__item text--h2 text--bold nav__item--best" href="./topmista/index.html">odkaz1</a>
-                </li>
-                <li class="nav__li">
-                    <a class="nav__item text--h2 text--bold nav__item--best" href="./conavstivit/index.html"> odkaz2</a>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
 
-                </li>
-                <li class="nav__li">
-                    <a class="nav__item text--h2 text--bold nav__item--best" href="./conavstivit/index.html">odkaz3</a>
+                    <li class="nav__li">
+                        <a class="nav__item text--h2 text--bold nav__item--best" href="#info">Služby</a>
 
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main">
+                    </li>
+                    <li class="nav__li">
+                        <a class="nav__item text--h2 text--bold nav__item--best" href="#portfolio">
+                            Portfolio</a>
+                    </li>
+                    <li class="nav__li">
+                        <a class="nav__item text--h2 text--bold nav__item--best" href="#aboutme">O mně</a>
+
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
         <section class="hero__section">
             <div class="hero__section__container">
 
                 <article class="hero__socials">
                     <div class="line"></div>
-                    <img src="./img/logo.svg" alt="Logo" class="hero__logo">
-                    <img src="./img/logo.svg" alt="Logo" class="hero__logo">
-                    <img src="./img/logo.svg" alt="Logo" class="hero__logo">
-                    <img src="./img/logo.svg" alt="Logo" class="hero__logo">
+                    <a href="#"> <span class="icon- icon">instagram</span> </a>
+                    <a href="#"> <span class="icon- icon">github</span> </a>
                     <div class="line"></div>
                 </article>
                 <article class="hero__container">
                     <h2 class="hero__title text--h1 text--bold">Jsem Jakub Jezbera</h2>
-                    <p class="hero__text text--p">I am a photografer. I like a photograph people, happy people. Life
-                        stories. I try do it stylish and bautiful, leelings and amotions</p>
+                    <p class="hero__text text--p">Jsem fotograf a tvořím weby na zakázku. Rád zachycuju lidi, jejich
+                        emoce a příběhy – stylově, s citem a krásou. Ať už jde o fotky nebo web, vždycky se snažím,
+                        aby
+                        z toho byl zážitek.</p>
                     <a href="#" class="hero__button text--h2 text--bold btn">Mám zájem</a>
                 </article>
             </div>
 
 
         </section>
+    </div>
+    <main class="main">
+        <section class="info" id="info">
+            <p class="text--h1">Co Vám mohu nabídnout?</p>
+            <section class="info__content">
+                <article class="info__container">
+                    <span class="icon-">camera</span>
+                    <p class="text text--h2">Fotografie</p>
+                    <p class="text text--p">Kvalitní a živé snímky, které zachytí vás i váš příběh.</p>
+                </article>
+                <article class="info__container">
+                    <span class="icon-">web</span>
+                    <p class="text text--h2">Tvorba webů</p>
+                    <p class="text text--p">Tvořím moderní a funkční weby, které zaujmou a prodávají.</p>
+                </article>
+                <article class="info__container">
+                    <span class="icon-">code</span>
+                    <p class="text text--h2">Kódování</p>
+                    <p class="text text--p">Vytvořím Vám funkční web, který bude dohledatelný!</p>
+                </article>
+            </section>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <h2 class="text--h1 text--bold">Portfolio webů</h2>
+            <div class="portfolio__container portfolio__container--web">
+                <article class="portfolio__item">
+                    <a href="https://kubaejj.github.io/BestOf/" target="_blank"><img src="./img/LogoWhite.svg"
+                            alt="Portfolio Image 1" class="portfolio__image"></a>
+                    <p class="text text--h2 text--bold">PoznejPrahu</p>
+                    <p class="text text--p">Webová stránka, která byla mnou vymyšlená jako první komplexní web</p>
+                </article>
+                
+            </div>
+        </section>
+        <section class="portfolio">
+            <h2 class="text--h1 text--bold">Portfolio obrázků</h2>
+            <div class="portfolio__container">
+
+                <a href="./img/_D700888.jpg" target="_blank" class="portfolio__item">
+                    <img src="./img/_D700888.jpg" alt="Fotografie – pták na zábradlí" class="portfolio__image">
+                </a>
+                <a href="./img/_JEZ4311.jpg" target="_blank" class="portfolio__item">
+                    <img src="./img/_JEZ4311.jpg" alt="Fotografie – hokejová fotka WEHL" class="portfolio__image">
+                </a>
+                <a href="./img/JEZ_5566.jpg" target="_blank" class="portfolio__item">
+                    <img src="./img/JEZ_5566.jpg" alt="Fotografie – fontány - Marseille" class="portfolio__image">
+                </a>
+                <a href="./img/JEZ_8582.jpg" target="_blank" class="portfolio__item">
+                    <img src="./img/JEZ_8582.jpg" alt="Fotografie – auto v driftu" class="portfolio__image">
+                </a>
+                <a href="./img/D70_1557.jpg" target="_blank" class="portfolio__item">
+                    <img src="./img/D70_1557.jpg" alt="Fotografie – detail na svatbu" class="portfolio__image">
+                </a>
+                <a href="./img/_JEZ5167.jpg" target="_blank" class="portfolio__item">
+                    <img src="./img/_JEZ5167.jpg" alt="Fotografie – portrét psa" class="portfolio__image">
+                </a>
+                <a href="./img/JEZ_5875.jpg" target="_blank" class="portfolio__item">
+                    <img src="./img/JEZ_5875.jpg" alt="Fotografie – kaple - Barcelona" class="portfolio__image">
+                </a>
+            </div>
+
+        </section>
+
+
+        <section class="aboutme" id="aboutme">
+
+            <div class="aboutme__container">
+                <img src="./img/IMG_6423.jpg" alt="Jakub Jezbera" class="aboutme__image">
+                <div class="aboutme__text">
+                    <p class="text--h1 text--bold">O mně</p>
+                    <p class="text text--p">Jsem fotograf a webový tvůrce, který miluje spojení estetiky a funkčnosti.
+                        Ať už jde o zachycení emocí ve fotce nebo vytvoření webu, co má styl i smysl – vždy jdu naplno.
+                    </p>
+
+                    <p class="text text--p">Je mi 17 a studuju průmyslovku v Liberci. Ve volném čase fotím všechno, co
+                        má atmosféru – od svateb přes auta až po momentky ze života. A když nesvítí blesk, svítí mi
+                        monitor s kódem.</p>
+                    <p class="text text--h2 text--bold">Moje cíle</p>
+                    <ul>
+                        <li class="text text--p">Zlepšit své fotografické dovednosti a techniky.</li>
+                        <li class="text text--p">Rozšířit své portfolio o nové projekty a spolupráce.</li>
+                        <li class="text text--p">Vytvořit moderní a funkční weby pro různé klienty.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer__container">
+                <div class="footer__links">
+                    <img src="./img/logo.svg" alt="Logo" class="footer__logo-img">
+
+                    <a href="#info" class="text text--p">Služby</a>
+                    <a href="#portfolio" class="text text--p">Portfolio</a>
+                    <a href="#aboutme" class="text text--p">O mně</a>
+                </div>
+
+
+                <div class="footer__contact">
+                    <p class="text text--p">E-mail: <a href="mailto:jakubjezbera8@gmail.com">jakubjezbera8@gmail.com</a>
+                    </p>
+                    <p class="text text--p">Telefon: <a href="tel:+420735149560">+420 735 149 560</a></p>
+                    <div class="footer__socials">
+                        <span class="icon- icon">instagram</span>
+                        <span class="icon- icon">github</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__text">
+                <p class="text text--p">© 2023 Jakub Jezbera. Všechna práva vyhrazena.</p>
+            </div>
+        </footer>
+
 
 
 

@@ -19,7 +19,9 @@ html {
     font-family: Roboto;
     scroll-behavior: smooth;
 }
-
+a{
+    text-decoration: none;
+}
 
 .header__row {
     display: flex;

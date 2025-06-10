@@ -472,3 +472,32 @@ a{
  }
     
 }
+
+.header--404  {
+background-color: var(--gray);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+.main{
+    flex-grow: 1;
+}
+.error__body .main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.error__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    gap: 1rem;
+    font-size: 1.25rem;
+}

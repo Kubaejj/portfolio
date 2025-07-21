@@ -71,7 +71,10 @@
         right: 0;
         width: 100%;
         overflow-y: auto;
-        background-image: url('../img/header-bg.webp');
+        background-image: url('../img/background.webp');
+        background-size: cover;
+        background-position: left;
+        background-repeat: no-repeat;
         z-index: 80;
 
     }

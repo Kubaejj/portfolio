@@ -49,12 +49,13 @@ a {
 }
 
 .header__logo {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
+    padding: 0 1rem;
 }
 
 .header__title {
-    font-size: 1.25rem;
+    font-size: 2rem;
     color: var(--white);
 }
 
@@ -112,7 +113,7 @@ a {
     color: var(--white);
 }
 
-.hero__container h2 {
+.hero__container h1 {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }
@@ -221,11 +222,13 @@ a {
     background-size: cover;
     height: 100vh;
 }
-.contact{
+
+.contact {
     display: flex;
     gap: 1rem;
     align-items: center;
 }
+
 .info__content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
@@ -242,6 +245,7 @@ a {
     align-items: center;
     text-align: center;
 }
+
 .info__container:hover {
     background-color: var(--white);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);

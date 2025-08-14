@@ -38,41 +38,42 @@
 
 
 <body>
-    <div class="overlay">
-        <header class="header">
-            <div class="header__row">
-                <div class="header__logo-container">
-                    <a href="#">
-                        <img src="./img/logo.svg" alt="Logo" class="header__logo">
 
-                    </a>
-                </div>
-                <a href="javascript:void(0)" class="header__hamburger hamburger" aria-label="Otevřít navigaci">
-                    <span class="hamburger__line"></span>
-                    <span class="hamburger__line"></span>
-                    <span class="hamburger__line"></span>
+    <header class="header">
+        <div class="header__row">
+            <div class="header__logo-container">
+                <a href="#">
+                    <img src="./img/logo.svg" alt="Logo" class="header__logo">
+
                 </a>
             </div>
-            <nav class="header__nav nav">
-                <ul class="nav__list">
+            <a href="javascript:void(0)" class="header__hamburger hamburger" aria-label="Otevřít navigaci">
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+                <span class="hamburger__line"></span>
+            </a>
+        </div>
+        <nav class="header__nav nav">
+            <ul class="nav__list">
 
-                    <li class="nav__li">
-                        <a class="nav__item text--h2 text--bold nav__item--best" href="#info">Služby</a>
+                <li class="nav__li">
+                    <a class="nav__item text--h2 text--bold nav__item--best" href="#info">Služby</a>
 
-                    </li>
-                    <li class="nav__li">
-                        <a class="nav__item text--h2 text--bold nav__item--best" href="#web">
-                            Portfolio</a>
-                    </li>
-                    <li class="nav__li">
-                        <a class="nav__item text--h2 text--bold nav__item--best" href="#aboutme">O mně</a>
+                </li>
+                <li class="nav__li">
+                    <a class="nav__item text--h2 text--bold nav__item--best" href="#web">
+                        Portfolio</a>
+                </li>
+                <li class="nav__li">
+                    <a class="nav__item text--h2 text--bold nav__item--best" href="#aboutme">O mně</a>
 
-                    </li>
-                </ul>
-            </nav>
-        </header>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-        <section class="hero__section">
+    <section class="hero__section">
+        <div class="overlay">
             <div class="hero__section__container">
 
                 <article class="hero__socials">
@@ -101,13 +102,13 @@
                     <div class="line"></div>
                 </article>
                 <article class="hero__container">
-                    <h1 class="hero__title text--h1 text--bold">Jsme VISURA</h1>
-                    <p class="hero__text text--p">Jmenuji se Jakub Jezbera a jsem fotograf a tvořím weby na zakázku. Rád
-                        zachycuju lidi, jejich
-                        emoce a příběhy – stylově, s citem a krásou. Ať už jde o fotky nebo web, vždycky se snažím,
-                        aby
-                        z toho byl zážitek.</p>
-                    <a href="#web" class="hero__button text--h2 text--bold btn">Mám zájem</a>
+                    <h1 class="hero__title text--h1 text--bold">VISURA – Fotografie & Weby</h1>
+                    <p class="hero__text text--p">
+                        Jsem Jakub Jezbera – spojuji svět fotografie a webového designu. Zachytím váš příběh i emoce do
+                        snímků a vytvořím web, který bude nejen krásný, ale i funkční.
+                    </p>
+                    <a href="#web" class="hero__button text--h2 text--bold btn">Pojďme tvořit</a>
+
                 </article>
             </div>
 
@@ -118,8 +119,9 @@
                         fill="#fff" />
                 </svg>
             </a>
-        </section>
-    </div>
+        </div>
+    </section>
+
     <main class="main" id="main">
         <section class="info" id="info">
             <p class="text--h1">Co Vám mohu nabídnout?</p>
@@ -134,7 +136,7 @@
                             stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                     <p class="text text--h2">Fotografie</p>
-                    <p class="text text--p">Kvalitní a živé snímky, které zachytí vás i váš příběh.</p>
+                    <p class="text text--p">Autentické snímky, které vypráví váš příběh.</p>
                 </a>
                 <a href="#web" class="info__container">
                     <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -143,7 +145,7 @@
                             fill="#333" />
                     </svg>
                     <p class="text text--h2">Tvorba webů</p>
-                    <p class="text text--p">Tvořím moderní a funkční weby, které zaujmou a prodávají.</p>
+                    <p class="text text--p">Moderní weby s důrazem na design, rychlost a prodej</p>
                 </a>
                 <a href="#web" class="info__container">
                     <svg class="icon" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -155,7 +157,7 @@
                             fill="#333" />
                     </svg>
                     <p class="text text--h2">Kódování</p>
-                    <p class="text text--p">Vytvořím Vám funkční web, který bude dohledatelný!</p>
+                    <p class="text text--p">Technicky čistý a SEO-friendly kód, co vás dostane na oči.</p>
                 </a>
             </section>
         </section>
@@ -259,15 +261,10 @@
                 <img src="./img/IMG_6423.webp" alt="Jakub Jezbera" class="aboutme__image">
                 <div class="aboutme__text">
                     <p class="text--h1 text--bold">O mně</p>
-                    <p class="text text--p">Jmenuji se Jakub Jezbera a je mi 17 let a studuju průmyslovku v Liberci. Ve
-                        volném čase fotím
-                        všechno,
-                        co
-                        má atmosféru – od svateb přes auta až po momentky ze života. A když nesvítí blesk, svítí mi
-                        monitor s kódem.</p>
-                    <p class="text text--p">Jsem fotograf a webový tvůrce, který miluje spojení estetiky a funkčnosti.
-                        Ať už jde o zachycení emocí ve fotce nebo vytvoření webu, co má styl i smysl – vždy jdu naplno.
+                    <p class="text text--p">Jsem 17letý fotograf a webový tvůrce z Liberce. Miluju spojení estetiky a
+                        funkčnosti – ať už jde o zachycení momentu ve fotce, nebo tvorbu webu, který má styl a smysl.
                     </p>
+
 
 
                     <p class="text text--h2 text--bold">Moje cíle</p>
@@ -283,7 +280,7 @@
     <footer>
         <div class="footer__container">
             <div class="footer__links">
-                <img src="./img/logo.svg" alt="Logo" class="footer__logo-img">
+                <img src="./img/logo-white.svg" alt="Logo" class="footer__logo-img">
 
                 <a href="#info" class="text text--p">Služby</a>
                 <a href="#web" class="text text--p">Portfolio</a>

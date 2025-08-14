@@ -1,15 +1,16 @@
 .header__hamburger {
-    width: 28px;
-    height: 24px;
+    width: 40px;
+    height: 36px;
     position: relative;
     display: block;
 }
 
 .hamburger__line {
     position: absolute;
-    height: 4px;
+    height: 8px;
+    border-radius: 10px;
     width: 100%;
-    background: var(--white, #F0F0F0);
+    background: var(--gray);
 }
 
 .hamburger__line:nth-child(1) {
@@ -18,7 +19,7 @@
 }
 
 .hamburger__line:nth-child(2) {
-    top: 10px;
+    top: 15px;
     transition: transform 0.5s;
 }
 
@@ -40,7 +41,6 @@
 
 .nav__item {
     text-decoration: none;
-    color: var(--white, #F0F0F0);
     padding: 0.5rem 1.25rem;
     display: block;
 }
@@ -56,7 +56,7 @@
 
 @media screen and (max-width: 808px) {
     .header__hamburger.active .hamburger__line:nth-child(1) {
-        transform: translateY(10px) rotate(45deg);
+        transform: translateY(15px) rotate(45deg);
     }
 
     .header__hamburger.active .hamburger__line:nth-child(2) {
@@ -64,14 +64,14 @@
     }
 
     .header__hamburger.active .hamburger__line:nth-child(3) {
-        transform: translateY(-10px) rotate(-45deg);
+        transform: translateY(-15px) rotate(-45deg);
     }
 
     .header__nav.active {
         right: 0;
         width: 100%;
         overflow-y: auto;
-        background-image: url('../img/background.webp');
+
         background-size: cover;
         background-position: left;
         background-repeat: no-repeat;
@@ -79,17 +79,27 @@
 
     }
 
+    .nav__item {
+        color: white;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+
+    .nav__list {
+        padding: 2em 1rem;
+    }
 
     .body {
         overflow-x: hidden;
     }
 
     .header__nav {
-        color: var(--white, #F0F0F0);
         position: fixed;
         width: 100%;
         right: -100%;
         transition: right 0.5s ease-in-out;
+        background-color: var(--gray);
     }
 
     .nav__li:hover {
@@ -106,12 +116,24 @@
     border-radius: .5rem;
 }
 
+.header {
+    position: fixed;
+    color: #000;
+    background-color: white;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.hero__section {
+    margin-top: 96px;
+}
+
 @media screen and (min-width: 808px) {
     .header__hamburger {
         display: none;
     }
 
-   
+
 
     .header {
         display: flex;

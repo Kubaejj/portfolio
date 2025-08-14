@@ -52,7 +52,14 @@
     z-index: 2;
 }
 
+.nav__item {
+    color: #000;
+    transition: all 0.3s ease;
+}
 
+.nav__item:hover {
+    scale: 1.05;
+}
 
 @media screen and (max-width: 808px) {
     .header__hamburger.active .hamburger__line:nth-child(1) {

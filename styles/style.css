@@ -280,7 +280,8 @@ a {
     border-bottom: 2px solid var(--gray);
 }
 
-.portfolio {
+.portfolio,
+.hockey {
     padding: 4rem 2rem;
     display: flex;
     flex-direction: column;
@@ -292,30 +293,35 @@ a {
     align-self: center;
 }
 
-.portfolio__image {
+.portfolio__image,
+.hockey__image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
 }
 
-.portfolio__item {
+.portfolio__item,
+.hockey__item {
     transition: transform 0.3s ease-in-out;
 }
 
-.portfolio__item:hover {
+.portfolio__item:hover,
+.hockey__item:hover {
     transform: scale(1.05);
 }
 
 
-.portfolio__item .text--h2 {
+.portfolio__item .text--h2,
+.hockey__item .text--h2 {
     font-size: 1.5rem;
     color: var(--gray);
     font-weight: 600;
     margin: 1rem 0;
 }
 
-.portfolio__container {
+.portfolio__container,
+.hockey__container {
     display: grid;
 
     gap: 2rem;
@@ -325,15 +331,19 @@ a {
 }
 
 @media screen and (min-width: 800px) {
-    .portfolio__container {
+
+    .portfolio__container,
+    .hockey__container {
         grid-template-columns: 1fr 1fr;
         grid-auto-flow: dense;
         display: grid;
         max-width: 1000px;
     }
 
+    .hockey__container {
 
-
+        grid-template-columns: 1fr 1fr;
+    }
 
     .portfolio__item:nth-of-type(1) {
         grid-column: span 2;
@@ -347,6 +357,30 @@ a {
     .portfolio__item:nth-of-type(6) {
         grid-column: span 2;
     }
+
+
+
+    .hockey__item:nth-of-type(1) {
+        grid-row: span 2;
+    }
+
+
+
+
+
+    .hockey__item:nth-of-type(4) {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .hockey__item:nth-of-type(5) {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .hockey__item:nth-of-type(8) {
+        grid-column: span 2;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -358,14 +392,21 @@ a {
 
     }
 
+    .hockey__container {
+        grid-template-columns: 1fr 1fr 1fr;
 
+    }
+
+    .hockey__item:nth-of-type(8) {
+        grid-column: span 1;
+    }
 }
 
 
 
 
-
-.portfolio .text--h1 {
+.portfolio .text--h1,
+.hockey .text--h1 {
     text-align: center;
     padding-top: 2rem;
     font-size: 2rem;

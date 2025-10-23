@@ -293,6 +293,7 @@ a {
     align-self: center;
 }
 
+
 .portfolio__image,
 .hockey__image {
     width: 100%;
@@ -671,3 +672,31 @@ body {
         border-radius: 8px 8px 0 0;
     }
 }
+
+.btn--zonerama {
+    border: 3px solid var(--gray);
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+    transition: transform 0.3s ease;
+    display: inline-block;
+    
+
+}
+.btn--zonerama--oposite {
+    border: 3px solid var(--white);
+    color: var(--white);
+    background-color: #000;
+}
+.btn--zonerama:hover {
+    transform: scale(1.05);
+
+
+    
+}
+
+
+

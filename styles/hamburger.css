@@ -43,16 +43,6 @@
     text-decoration: none;
     padding: 0.5rem 1.25rem;
     display: block;
-}
-
-.header {
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: 2;
-}
-
-.nav__item {
     color: #000;
     transition: all 0.3s ease;
 }
@@ -61,7 +51,8 @@
     scale: 1.05;
 }
 
-@media screen and (max-width: 808px) {
+@media screen and (max-width: 1020px) {
+   
     .header__hamburger.active .hamburger__line:nth-child(1) {
         transform: translateY(15px) rotate(45deg);
     }
@@ -78,12 +69,7 @@
         right: 0;
         width: 100%;
         overflow-y: auto;
-
-        background-size: cover;
-        background-position: left;
-        background-repeat: no-repeat;
         z-index: 80;
-
     }
 
     .nav__item {
@@ -95,9 +81,48 @@
 
     .nav__list {
         padding: 2em 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .body {
+    /* Zobrazit tlačítka v hlavní navigaci na mobilu */
+    .nav__li--buttons {
+        display: list-item;
+        margin-top: 1rem;
+    }
+
+    /* Styling pro tlačítka v mobilním menu */
+    .nav__li--buttons .btn--zonerama {
+        border: 3px solid var(--white);
+        color: var(--white);
+        background-color: transparent;
+        padding: 0.8rem 1.5rem;
+        border-radius: 1rem;
+        text-decoration: none;
+        font-weight: 700;
+        transition: all 0.3s ease;
+        display: block;
+        text-align: center;
+    }
+
+    .nav__li--buttons .btn--zonerama--oposite {
+        background-color: var(--white);
+        color: var(--gray);
+    }
+
+    .nav__li--buttons .btn--zonerama:hover {
+        background-color: var(--white);
+        color: var(--gray);
+        transform: scale(1.05);
+    }
+
+    /* Skrýt sekundární navigaci na mobilu */
+    .nav--secondary {
+        display: none;
+    }
+
+    body {
         overflow-x: hidden;
     }
 
@@ -113,38 +138,47 @@
         transform: none;
         opacity: 1;
     }
-
 }
 
-.nav__li a:hover {
+.nav__li .nav__item:hover {
     background-color: white;
     color: #000;
-
     border-radius: .5rem;
 }
 
 .header {
     position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
     color: #000;
     background-color: white;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    z-index: 10;
 }
 
 .hero__section {
     margin-top: 96px;
 }
 
-@media screen and (min-width: 808px) {
+@media screen and (min-width: 1280px) {
+    .header__nav:first-of-type {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+    }
+}
+
+@media screen and (min-width: 1020px) {
     .header__hamburger {
         display: none;
     }
 
-
-
     .header {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
     .header__nav {
@@ -153,10 +187,20 @@
         margin: 0 1.25rem;
     }
 
+
+    /* Skrýt mobilní tlačítka z hlavní navigace na desktopu */
+    .nav__li--buttons {
+        display: none;
+    }
+
     .nav__list {
         display: flex;
         gap: 1.5rem;
         align-items: center;
+    }
+
+    .nav--secondary .nav__list {
+        gap: 1rem;
     }
 
 }

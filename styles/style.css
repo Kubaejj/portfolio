@@ -33,6 +33,9 @@ html {
 a {
     text-decoration: none;
 }
+.text--bold{
+    font-weight: 800;
+}
 
 .header__row {
     display: flex;
@@ -113,10 +116,19 @@ a {
     color: var(--white);
 }
 
-.hero__container h1 {
+.hero__container h1, .hero__container span {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }
+
+/* layout row for the two title parts ("Jsem" + name) */
+.hero__title-row {
+    display: flex;
+    gap: 0.75rem;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
 
 .hero__socials {
     display: flex;
@@ -218,7 +230,7 @@ a {
 }
 
 .overlay {
-    background-image: url(../img/background.webp);
+    background-image: url(../img/others/background.webp);
     background-size: cover;
     height: 100vh;
 }
@@ -353,6 +365,9 @@ a {
 
     .portfolio__item:nth-of-type(3) {
         grid-row: span 2;
+    }
+    .portfolio__item:nth-of-type(5) {
+        grid-column: span 2;
     }
 
     .portfolio__item:nth-of-type(6) {
